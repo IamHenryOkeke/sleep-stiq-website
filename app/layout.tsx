@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from 'next/font/google'
-
-// If loading a variable font, you don't need to specify the font weight
-const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: "Sleepstiq",
@@ -20,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className="font-poppins">
       <body>
         {children}
       </body>

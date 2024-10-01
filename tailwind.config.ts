@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryBlue: "#12305B",
+        primaryBlueSecondary: "#043C50",
+        primaryBlueLight: "#21384299",
+        primaryRed: "#FC5959",
+        primaryGreen: "#27AE60"
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
