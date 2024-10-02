@@ -47,7 +47,7 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <nav className='text-white py-5 md:py-10 flex justify-between lg:justify-start items-center gap-6 lg:gap-44'>
+    <nav className='text-white py-5 flex justify-between lg:justify-start items-center gap-6 lg:gap-44'>
       <Link href="/">
         <Image src={NavLogo} alt="" className='lg:w-fit h-10 lg:h-fit' />
       </Link>

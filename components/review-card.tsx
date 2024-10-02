@@ -7,11 +7,11 @@ export default function ReviewCard({ review, reviewAuthor }: { review: string, r
       <div className='flex flex-col gap-2'>
         <span className="font-bold">{reviewAuthor}</span>
         <div className='flex items-center gap-1.5 text-primaryGreen'>
-          <FaStar size={13}/>
-          <FaStar size={13}/>
-          <FaStar size={13}/>
-          <FaStar size={13}/>
-          <FaStar size={13}/>
+          <FaStar size={13} />
+          <FaStar size={13} />
+          <FaStar size={13} />
+          <FaStar size={13} />
+          <FaStar size={13} />
         </div>
       </div>
     </div>
