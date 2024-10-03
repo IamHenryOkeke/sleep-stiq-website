@@ -60,15 +60,16 @@ export default function Navbar() {
       </div>
       <div className='md:hidden text-black'>
         {
-          open ? <div onClick={toggleMenu} className="cursor-pointer md:hidden">
-            <FiX size={30} />
-          </div> :
-            <div onClick={toggleMenu} className="cursor-pointer md:hidden">
-              <FiMenu size={30} />
-            </div>
+          !open &&
+          <div onClick={toggleMenu} className="cursor-pointer md:hidden">
+            <FiMenu size={30} />
+          </div>
         }
       </div>
-      <div className={`z-[1000] w-screen h-full md:hidden bg-primaryBlueSecondary transition-all ease-in-out origin-top px-5 py-6 absolute top-20 left-0 flex flex-col gap-5 ${open ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} duration-300`}>
+      <div className={`z-[1000] w-screen h-screen md:hidden bg-primaryBlueSecondary transition-all ease-in-out origin-top px-5 py-6 absolute top-0 left-0 flex flex-col gap-5 ${open ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"} duration-300`}>
+        <div onClick={toggleMenu} className="cursor-pointer md:hidden">
+          <FiX size={30} />
+        </div>
         <div className="flex flex-col justify-center items-center gap-8 text-center">
           {navLinks.map((link) => {
             return (
