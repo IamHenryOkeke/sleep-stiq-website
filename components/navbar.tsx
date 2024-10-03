@@ -39,10 +39,10 @@ export default function Navbar() {
   useEffect(() => {
     if (open) {
       if (typeof window != 'undefined' && window.document) {
-        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
       }
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.position = 'static';
     }
   }, [open])
 
