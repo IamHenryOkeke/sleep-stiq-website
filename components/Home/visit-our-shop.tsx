@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../button";
 
 export default function VisitOurShop() {
@@ -7,7 +8,11 @@ export default function VisitOurShop() {
       <p className="text-sm lg:text-base text-primaryBlueLight mx-auto lg:w-5/6 2xl:w-3/4">
         Our Personal Diffuser is an aromatherapy device that contains a blend of melatonin, lavender, and chamomile. A few breaths of our plant-based essential oil mist will mellow you out, quiet the mind, and lull you to bed.
       </p>
-      <Button text="Visit Shop" />
+      <div>
+        <Link href="/shop">
+          <Button text='Visit Shop' />
+        </Link>
+      </div>
     </section>
   )
 }

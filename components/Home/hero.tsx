@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Button from '../button';
 
 export default function Hero() {
@@ -6,7 +7,11 @@ export default function Hero() {
       <p className='md:text-lg'>We&apos;re here to help you</p>
       <h3 className='text-4xl md:text-6xl font-bold'>Relax & Rest</h3>
       <p className='md:text-lg'>With the aid of our Melatonin Sleepstiq, we can assure you that you can get quality sleep.</p>
-      <Button text='Visit Shop'/>
+      <div>
+        <Link href="/shop">
+          <Button text='Visit Shop' />
+        </Link>
+      </div>
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../button";
 import ShopNowImage from "@/public/assets/Group 3.png";
+import Link from "next/link";
 
 export default function ShopNow() {
   return (
@@ -19,7 +20,11 @@ export default function ShopNow() {
         <p className="text-sm lg:text-base lg:pr-14 2xl:pr-18 text-primaryBlueLight">
           Our Personal Diffuser is an aromatherapy device that contains a blend of melatonin, lavender, and chamomile. A few breaths of our plant-based essential oil mist will mellow you out, quiet the mind, and lull you to bed.
         </p>
-        <Button text="Visit Shop" />
+        <div>
+          <Link href="/shop">
+            <Button text='Visit Shop' />
+          </Link>
+        </div>
       </div>
     </section>
   )
